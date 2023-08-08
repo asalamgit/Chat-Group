@@ -1,0 +1,134 @@
+@import '../../styles/media-queries.scss';
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(42, 40, 40);
+	border: 0.01vw solid rgb(255, 255, 255);
+	border-radius: 1.5vw;
+}
+
+.profileEdit {
+	height: 1000px;
+	color: var(--white);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width: 915px) {
+		width: 90vw;
+		margin: auto;
+	}
+
+	@include sm {
+		margin-top: 0vw;
+		height: 260vw;
+	}
+
+	.backDiv {
+		position: absolute;
+		top: -7%;
+		left: 0%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		text-decoration: none;
+
+		@include sm {
+		}
+
+		span {
+			font-size: 15px;
+			color: var(--blue);
+
+			@include sm {
+				font-size: 4vw;
+			}
+		}
+
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			color: var(--blue);
+			text-decoration: none;
+			margin-left: 10%;
+
+			@include sm {
+				font-size: 4.5vw;
+			}
+		}
+	}
+
+	.card {
+		position: relative;
+		height: 915px;
+		width: 845px;
+		padding-left: 48px;
+		padding-top: 30px;
+		border-radius: 12px;
+		border: 1px solid #e0e0e0;
+
+		@include sm {
+			height: 230vw;
+			width: 90vw;
+			padding-left: 13vw;
+			padding-top: 5vw;
+			border-radius: 2.5vw;
+		}
+
+		h1 {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+
+			@include sm {
+				font-size: 6vw;
+			}
+		}
+
+		.intro {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			color: #828282;
+			margin-top: -10px;
+
+			@include sm {
+				font-size: 5vw;
+				margin-top: -2.5vw;
+			}
+		}
+
+		.save {
+			margin-top: 22.5px;
+			width: 82px;
+			height: 38px;
+			background: #2f80ed;
+			border: none;
+			color: var(--white);
+			border-radius: 8px;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			cursor: pointer;
+
+			@include sm {
+				margin-top: 4vw;
+				width: 28vw;
+				height: 10vw;
+				border-radius: 2vw;
+				font-size: 5vw;
+			}
+		}
+	}
+}

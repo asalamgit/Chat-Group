@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	background-color: var(--background);
+	height: max-content;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+	--background: #262328;
+	--background2: #4b454f;
+	--white: #ffffff;
+	--grey: #828282;
+	--grey2: #817f7f;
+	--grey3: #3f3b3b;
+	--grey4: #4f4d4d;
+	--grey5: #252329;
+	--grey6: #3c393f;
+	--grey7: #2f2e31;
+	--grey8: #bdbdbd;
+	--grey9: #f2f2f2;
+	--grey10:#e0e0e0;
+	--blue: #2f80ed;
+	--black: #000000;
+	--black2:#120F13;
+	--black3:#0b090c;
+	--blackTransparent:rgba(0, 0, 0, 0.3);
+	--red: #ff0000;
+}

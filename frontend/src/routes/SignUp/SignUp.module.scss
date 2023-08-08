@@ -1,0 +1,196 @@
+@import '../../styles/media-queries.scss';
+
+.signUp {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--white);
+
+	@include sm {
+		align-items: top;
+		justify-content: flex-start;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--grey2);
+		border-radius: 24px;
+		height: 530px;
+		width: 473px;
+
+		@include sm {
+			border: none;
+			width: 98vw;
+			align-items: top;
+			justify-content: flex-start;
+		}
+
+		.imgDevChallenge {
+			margin-right: 49%;
+			width: 130px;
+			margin-top: 15px;
+			margin-bottom: 10px;
+
+			@include sm {
+				margin-right: 59%;
+				width: 30vw;
+				margin-top: 5vw;
+				margin-bottom: 3vw;
+			}
+		}
+
+		h1 {
+			font-size: 18px;
+			width: 76%;
+			text-align: left;
+			
+			@include sm {
+				width: 88vw;
+				font-size: 5vw;
+			}
+		}
+		
+		.intro {
+			width: 76%;
+			font-size: 15px;
+			margin-top: 0px;
+			margin-bottom: 23px;
+
+			@include sm {
+				width: 88vw;
+				font-size: 4vw;
+				margin-bottom: 5vw;
+			}
+		}
+
+		.divInput {
+			height: 48px;
+			width: 356px;
+			border: 1px solid var(--grey2);
+			border-radius: 8px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 14px;
+
+			@include sm {
+				justify-content: left;
+				width: 88vw;
+				height: 12vw;
+				margin-bottom: 3vw;
+			}
+			
+			span {
+				font-size: 30px;
+				color: var(--grey2);
+				margin-left: 10px;
+				margin-right: 8px;
+				
+				@include sm {
+					margin-left: 2vw;
+					margin-right: 2vw;
+					font-size: 7vw;
+				}
+			}
+			
+			input {
+				height: 42px;
+				width: 305px;
+				background: transparent;
+				border: none;
+				outline: none;
+				font-size: 16px;
+				font-weight: 400;
+				text-align: left;
+				color: var(--white);
+				
+				@include sm {
+					font-size: 4.5vw;
+				}
+			}
+		}
+
+		button {
+			height: 45px;
+			width: 357.5px;
+			border-radius: 8px;
+			color: var(--white);
+			border: none;
+			background-color: var(--blue);
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 600;
+
+			&:disabled{
+				background-color: var(--grey);
+			}
+
+			@include sm {
+				height: 10vw;
+				width: 88vw;
+				font-size: 4vw;
+			}
+		}
+
+		.continue {
+			width: 100%;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			color: var(--grey2);
+			margin-top: 30px;
+			margin-bottom: 20px;
+
+			@include sm {
+				font-size: 4vw;
+				margin-top: 5vw;
+				margin-bottom: 4vw;
+			}
+		}
+
+		.socialMedia {
+			width: 50%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+
+			img {
+				height: 42px;
+				width: 42px;
+				cursor: pointer;
+
+				@include sm {
+					height: 10vw;
+					width: 10vw;
+				}
+			}
+		}
+
+		.login {
+			margin-top: 30px;
+			width: 100%;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			color: var(--grey2);
+
+			@include sm {
+				margin-top: 5vw;
+				font-size: 4vw;
+			}
+
+			.Link {
+				color: var(--blue);
+				text-decoration: none;
+			}
+		}
+	}
+}

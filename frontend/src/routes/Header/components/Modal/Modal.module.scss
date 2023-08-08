@@ -1,0 +1,74 @@
+@import '../../../../styles/media-queries.scss';
+
+.modalTop {
+	right: 10px;
+	top: 60px;
+	
+	@include sm {
+		right: 2vw;
+		top: 14vw;
+	}
+}
+
+.modalBottom {
+	right: 35px;
+	bottom: 70px;
+
+	
+}
+
+.modal {
+	z-index: 10;
+	width: 188px;
+	height: 174px;
+	position: absolute;
+	background: var(--grey3);
+	border: 1px solid var(--black);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+	.modalItem {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 164.12px;
+		height: 40px;
+		color: var(--white);
+		background: transparent;
+		border-radius: 8px;
+		cursor: pointer;
+
+		&:hover {
+			background: var(--grey4);
+		}
+
+		&:first-child {
+			margin-bottom: 10px;
+		}
+
+		&:last-child {
+			color: var(--red);
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		span {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	.sep {
+		width: 164.12px;
+		height: 1px;
+		background-color: var(--grey2);
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

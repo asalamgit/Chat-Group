@@ -1,0 +1,41 @@
+@import '../../../../styles/media-queries.scss';
+
+.chatLeft {
+	width: 324px;
+	height: 100vh;
+	background-color: var(--black2);
+
+	@include md {
+		position: absolute;
+		width: 85vw;
+		z-index: 5;
+	}
+
+	.chatLeftClose {
+		display: none;
+		@include md {
+			display: block;
+			background-color: var(--black2);
+			position: fixed;
+			top: 14px;
+			right: 7px;
+			width: 32px;
+			height: 32px;
+			border-radius: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+
+		span {
+			color: var(--white);
+		}
+	}
+}
+
+.hideChatLeft {
+	@include md {
+		display: none;
+	}
+}

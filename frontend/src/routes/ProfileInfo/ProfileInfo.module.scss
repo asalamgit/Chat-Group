@@ -1,0 +1,179 @@
+@import '../../styles/media-queries.scss';
+
+.profileInfo {
+	margin-top: -40px;
+	background-color: var(--background);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--white);
+
+	@include md {
+		margin-top: 0;
+	}
+
+	h1 {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+
+		@include md {
+			font-size: 24px;
+		}
+	}
+
+	.description {
+		margin-top: -20px;
+		color: var(--grey);
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+
+		@include md {
+			margin-top: -10px;
+			font-size: 14px;
+		}
+	}
+
+	.card {
+		height: 580px;
+		width: 700px;
+		margin-bottom: 40px;
+		border: 1px solid var(--grey2);
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		@include md {
+			width: 100%;
+			border:none;
+		}
+
+		.cardHeader,
+		.photo {
+			width: 100%;
+			height: 17.5%;
+			border-bottom: 1px solid var(--grey2);
+		}
+
+		.cardHeader {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid var(--grey2);
+			
+			@include md {
+				width: 95%;
+				border:none;
+			}
+
+			.left {
+				margin-left: 5%;
+
+				h1 {
+					font-size: 24px;
+					font-weight: 400;
+				}
+
+				p {
+					font-size: 13px;
+					font-weight: 500;
+					margin-top: -20px;
+					color: var(--grey);
+
+					@include md {
+						width: 80%;
+					}
+				}
+			}
+
+			.link {
+				height: 38px;
+				width: 10%;
+				width: 95px;
+				border-radius: 12px;
+				margin-right: 5%;
+				margin-left: 5%;
+				background-color: transparent;
+				border: 1px solid var(--grey);
+				cursor: pointer;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-style: normal;
+				font-weight: 500;
+				color: var(--grey);
+				text-decoration: none;
+			}
+
+			.link:hover {
+				background-color: var(--grey3);
+			}
+		}
+
+		.photo {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+
+			p {
+				font-size: 13px;
+				font-weight: 500;
+				margin-left: 5%;
+				margin-top: 13px;
+				color: var(--grey2);
+				width: 16%;
+			}
+
+			img {
+				height: 65px;
+				width: 65px;
+				border-radius: 8px;
+				margin-left: 15%;
+			}
+		}
+
+		.littleCards {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			width: 100%;
+			height: 13%;
+			border-bottom: 1px solid var(--grey2);
+
+			p {
+				font-size: 13px;
+				font-weight: 500;
+				margin-left: 5%;
+				color: var(--grey2);
+				width: 16%;
+			}
+
+			h3 {
+				font-size: 18px;
+				font-weight: 500;
+				color: var(--white);
+				margin-left: 15%;
+				width: 62%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				@include md {
+					font-size: 16px;
+				}
+			}
+		}
+
+		.littleCards:last-child {
+			border-bottom: none;
+		}
+	}
+}

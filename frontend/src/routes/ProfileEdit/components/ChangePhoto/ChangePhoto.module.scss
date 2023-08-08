@@ -1,0 +1,69 @@
+@import '../../../../styles/media-queries.scss';
+
+.changePhoto {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-top: 30px;
+	width: 80%;
+
+	@include sm {
+		margin-top: 5vw;
+	}
+
+	img {
+		width: 72px;
+		height: 72px;
+		border-radius: 8px;
+
+		@include sm {
+			width: 18vw;
+			height: 18vw;
+		}
+	}
+
+	button {
+		margin-left: 3%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		border: 1px solid var(--grey);
+		background-color: rgb(63, 59, 59);
+		color: white;
+		cursor: pointer;
+		width: 150px;
+		height: 30px;
+
+		@include sm {
+			width: 38vw;
+			height: 8.5vw;
+			border-radius: 1vw;
+		}
+
+		span {
+			margin-left: 2%;
+			margin-right: 6%;
+			font-size: 18px;
+
+			@include sm {
+				font-size: 5vw;
+			}
+		}
+
+		p {
+			width: 150%;
+			font-size: 12px;
+			overflow: hidden;
+			white-space: nowrap;
+			display: block;
+			text-overflow: ellipsis;
+			text-align: left;
+
+			@include sm {
+				font-size: 3.5vw;
+			}
+		}
+	}
+}

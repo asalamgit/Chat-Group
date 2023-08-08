@@ -1,0 +1,23 @@
+@import '../../styles/media-queries.scss';
+
+.header {
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+	@include sm {
+		padding: 4vw;
+		margin-bottom: 2vw;
+	}
+
+	img {
+		width: 175px;
+
+		@include sm {
+			width: 40vw;
+		}
+	}
+}

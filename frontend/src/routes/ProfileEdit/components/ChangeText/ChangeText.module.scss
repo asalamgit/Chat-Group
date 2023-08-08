@@ -1,0 +1,72 @@
+@import '../../../../styles/media-queries.scss';
+
+.changeText {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+
+	@include sm {
+		margin-top: 1.5vw;
+	}
+
+	h2 {
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+
+		@include sm {
+			font-size: 5vw;
+		}
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+	}
+
+	input,
+	textarea {
+		margin-top: -0.5%;
+		width: 70%;
+		border: 1px solid var(--grey);
+		background-color: transparent;
+		border-radius: 12px;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 500;
+		padding-left: 2%;
+		padding-right: 1.5%;
+		color: var(--white);
+		outline: none;
+		font-family: 'Noto Sans', sans-serif;
+
+		@media screen and (max-width: 915px) {
+			width: 100%;
+			margin: auto;
+		}
+
+		@include sm {
+			width: 100%;
+			border-radius: 2.2vw;
+			font-size: 4vw;
+		}
+	}
+
+	input {
+		height: 52px;
+
+		@include sm {
+			height: 11vw;
+		}
+	}
+
+	textarea {
+		height: 102px;
+		padding-top: 2%;
+		resize: none;
+
+		@include sm {
+			height: 25vw;
+		}
+	}
+}

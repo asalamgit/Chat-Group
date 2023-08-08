@@ -1,0 +1,9 @@
+node_modules
+uploads/*
+!uploads/1686682511490-29ba51e0-ae6c-4fcf-bf70-8cf36630c3ba-nftmonkey.jpeg
+dist
+tache.txt
+docker-compose.yml
+.DS_Store
+.env
+tache.txt
