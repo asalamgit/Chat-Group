@@ -2,7 +2,7 @@
 
 Chat Group est une application web qui permet aux utilisateurs de chatter en temps réel.
 
-Ce projet fait partie des défis propose par le site DevChallenges: [DevChallenges](https://devchallenges.io/challenges/UgCqszKR7Q7oqb4kRfI0).
+Ce projet fait partie des défis propose par le site [DevChallenges](https://devchallenges.io/challenges/UgCqszKR7Q7oqb4kRfI0).
 
 ## Accès au site
 
