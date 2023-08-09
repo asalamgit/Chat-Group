@@ -18,6 +18,7 @@ Le site est actuellement hébergé sur [http://chatgroup-bucket.s3-website.eu-we
 
 ### Backend
 
+- Typecript
 - Nest.js
 - Socket.io
 - TypeORM
@@ -27,6 +28,7 @@ Le site est actuellement hébergé sur [http://chatgroup-bucket.s3-website.eu-we
 
 ### Frontend
 
+- Typecript
 - React
 - SCSS
 - AWS S3 pour le déploiement du frontend
