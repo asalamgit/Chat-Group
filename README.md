@@ -4,10 +4,6 @@ Chat Group est une application web qui permet aux utilisateurs de chatter en tem
 
 Ce projet fait partie des défis propose par le site [DevChallenges](https://devchallenges.io/challenges/UgCqszKR7Q7oqb4kRfI0).
 
-## Accès au site
-
-Le site est actuellement hébergé sur [http://chatgroup-bucket.s3-website.eu-west-3.amazonaws.com/](http://chatgroup-bucket.s3-website.eu-west-3.amazonaws.com/).
-
 ## Fonctionnalités
 
 - Communication en temps réel avec d'autres utilisateurs dans les channels
